@@ -55,18 +55,17 @@
     
     
         // CSS Box Js Code
-          let CSSBox = document.getElementById("text-result");
-          let CSSButton = document.getElementById("CSSButton");
-    
-          CSSButton.onclick = function() {
-            CSSBox.select();
-            document.execCommand("copy");
-            CSSButton.innerText = "Copied"
-            document.getElementById("alert").style.display="block";
+        let CSSBox = document.getElementById("text-result");
+      let CSSButton = document.getElementById("CSSButton");
+
+      CSSButton.onclick = function() {
+        CSSBox.select();
+        document.execCommand("copy");
+        document.getElementById("alert").style.display="block";
             setTimeout(function(){
               document.getElementById("alert").style.display = "none"
             },1000);
-          }
+      }
         
       </script>
     </section>
