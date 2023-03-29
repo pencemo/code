@@ -1,13 +1,6 @@
-body {
-    color: #fff;
-    background-color: #d1d1d1;
-    font-family: 'Raleway', sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
 .txt-uni {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 @font-face {
@@ -24,10 +17,86 @@ body {
 }
 
 .out {
-    padding-top: 2%;
+    padding-top: 3%;
 }
-
+.bar {
+    background-color: #034994;
+}
 #text-result {
     font-family: 'fml-indulekhabold';
     font-size: 1.4em;
 }
+
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=roboto:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto" , sans-serif;
+}
+body{
+  min-height: 100vh;
+  width: 100%;
+  background: #fdfcfc;
+}
+.text-boxes{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+  margin-bottom: 60px;
+}
+.text-boxes .text-box{
+  height: 300px;
+  max-width: 660px;
+  width: 100%;
+  margin: 5px 0;
+}
+.text-boxes .text-box .topic{
+  font-size: 18px;
+  font-weight: 600;
+  color: #034994;
+  margin: 1px;
+}
+.text-boxes .text-box textarea{
+  height: 80%;
+  width: 100%;
+  padding: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  outline: none;
+  border: 1px solid #034994;
+  border-radius: 8px;
+  background: #e7edfe;
+}
+.text-box textarea::-webkit-scrollbar{
+  display: none;
+}
+.text-boxes .text-box button{
+  height: 45px;
+  width: 155px;
+  color: #fff;
+  background: #1747e6;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 400;
+  margin: 8px 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.text-boxes .text-box button:hover{
+  background: #031194;
+}
+@media (max-width: 400px) {
+  .text-boxes .text-box button{
+    width: 100%;
+  }
+}
+
+
+
