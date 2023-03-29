@@ -72,6 +72,23 @@ body{
   border-radius: 8px;
   background: #e7edfe;
 }
+
+#alert {
+    width: 90%;
+    text-align: center;
+    background-color: #202126;
+    color: #ccc;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    padding: 5px 0;
+    outline: none;
+    border-radius: 10px;
+    display: none;
+
+
+}
 .text-box textarea::-webkit-scrollbar{
   display: none;
 }
