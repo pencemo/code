@@ -44,24 +44,26 @@
         </div>
         <div class="text-box CSSBox">
           <div class="topic">ASCII Letter</div>
-          <textarea  id="text-result" id="CSSBox" readonly ></textarea>
-          <button id="CSSButton">Copy text <i class="fa fa-clone"></i></button>
+          <textarea  id="text-result" readonly ></textarea>
+          <button onclick="myFunction" id="CSSButton">Copy text <i class="fa fa-clone"></i></button>
         </div>
         
     
       <script>
-    
-    
-        // CSS Box Js Code
-          let CSSBox = document.getElementById("text-result");
-          let CSSButton = document.getElementById("CSSButton");
-    
-          CSSButton.onclick = function() {
-            CSSBox.select();
-            document.execCommand("copy");
-            CSSButton.innerText = "Copied"
-          }
-        
+        function myFunction() {
+  // Get the text field
+  var copyText = document.getElementById("text-result");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+  // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+  
+  // Alert the copied text
+  alert("Copied the text: " + copyText.value);
+}
       </script>
     </section>
     <!-- Remove the container if you want to extend the Footer to full width. -->
