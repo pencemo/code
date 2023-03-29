@@ -44,7 +44,7 @@
         </div>
         <div class="text-box CSSBox">
           <div class="topic">ASCII Letter</div>
-          <textarea id="text-result" readonly ></textarea>
+          <textarea id="text-result" id="CSSBox" readonly ></textarea>
           <button id="CSSButton">Copy text <i class="fa fa-clone"></i></button>
         </div>
         
@@ -53,7 +53,7 @@
     
     
         // CSS Box Js Code
-          let CSSBox = document.getElementById("CSSBox");
+          let CSSBox = document.getElementById("text-resul");
           let CSSButton = document.getElementById("CSSButton");
     
           CSSButton.onclick = function() {
