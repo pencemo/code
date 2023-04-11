@@ -1,46 +1,50 @@
-
 .txt-uni {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 @font-face {
-    font-family: 'fml-indulekhabold';
-    src: url('./fonts/fmlin0bps-webfont.woff2') format('woff2'),
+  font-family: 'fml-indulekhabold';
+  src: url('./fonts/fmlin0bps-webfont.woff2') format('woff2'),
     url('./fonts/fmlin0bps-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-weight: normal;
+  font-style: normal;
 }
 
 .input {
-    padding-left: 6%;
-    padding-right: 6%;
+  padding-left: 6%;
+  padding-right: 6%;
 }
 
 .out {
-    padding-top: 3%;
+  padding-top: 3%;
 }
+
 .bar {
-    background-color: #202126;
+  background-color: #202126;
 }
+
 #text-result {
-    font-family: 'fml-indulekhabold';
-    font-size: 1.4em;
+  font-family: 'fml-indulekhabold';
+  font-size: 1.4em;
 }
 
 /* Google Font CDN Link */
 @import url('https://fonts.googleapis.com/css2?family=roboto:wght@200;300;400;500;600;700&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "roboto" , sans-serif;
+  font-family: "roboto", sans-serif;
 }
-body{
+
+body {
   min-height: 100vh;
   width: 100%;
   background: #fdfcfc;
 }
-.text-boxes{
+
+.text-boxes {
   height: 100%;
   width: 100%;
   display: flex;
@@ -51,39 +55,21 @@ body{
 }
 
 
-#alert {
-    width: 90%;
-    text-align: center;
-    background-color: #202126;
-    color: #ccc;
-    margin: auto;
-    left: 0;
-    right: 0;
-    bottom: 20px;
-    padding: 5px 0;
-    outline: none;
-    border-radius: 10px;
-    display: none;
-    opacity: 75%;
-
-
-}
-
-
-
-.text-boxes .text-box{
+.text-boxes .text-box {
   height: 300px;
   max-width: 660px;
   width: 100%;
   margin: 5px 0;
 }
-.text-boxes .text-box .topic{
+
+.text-boxes .text-box .topic {
   font-size: 18px;
   font-weight: 600;
   color: #1d1d1d;
   margin: 1px;
 }
-.text-boxes .text-box textarea{
+
+.text-boxes .text-box textarea {
   height: 80%;
   width: 100%;
   padding: 30px;
@@ -94,28 +80,100 @@ body{
   border-radius: 8px;
   background: #e7edfe;
 }
-.text-box textarea::-webkit-scrollbar{
+
+.text-box textarea::-webkit-scrollbar {
   display: none;
 }
-.text-boxes .text-box button{
+
+
+
+#alert {
+  position: absolute;
+  margin-top: 0px;
+  margin-left: 29px;
+  margin-top: 7px;
+  padding: 5px 10px;
+  background-color: #161616;
+  border-radius: 25px;
+  font-size: 13px;
+  color: #fff;
+  display: none;
+}
+
+#boxnon {
+  position: absolute;
+  margin-left: 71px;
+  margin-top: 2px;
+  background-color: #161616;
+  width: 10px;
+  height: 10px;
+  display: none;
+  transform: rotate(45deg);
+}
+
+
+
+@media (max-width: 400px) {
+  .text-boxes .text-box button {
+    width: 100%;
+  }
+}
+
+
+
+
+
+.text-boxes .text-box {
+  height: 300px;
+  max-width: 660px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.text-boxes .text-box .topic {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1d1d1d;
+  margin: 1px;
+}
+
+.text-boxes .text-box textarea {
+  height: 80%;
+  width: 100%;
+  padding: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  outline: none;
+  border: 1px solid #2b2b2b;
+  border-radius: 8px;
+  background: #e7edfe;
+}
+
+.text-box textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.text-boxes .text-box button {
   height: 45px;
   width: 155px;
   color: #fff;
-  background: #df2020;
+  background: #28a745;
   outline: none;
   border: none;
-  border-radius: 8px;
+  border-radius: 15px;
   font-size: 17px;
   font-weight: 400;
   margin: 8px 0;
   cursor: pointer;
   transition: all 0.4s ease;
 }
-.text-boxes .text-box button:hover{
-  background: #940303;
+
+.text-boxes .text-box button:hover {
+  background: #1d7a33;
 }
+
 @media (max-width: 400px) {
-  .text-boxes .text-box button{
+  .text-boxes .text-box button {
     width: 100%;
   }
 }
@@ -126,127 +184,153 @@ body{
 
 
 
-body {
-    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
-  
-  h1, h2, h3, h4, h5, h6,
-  .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
-  
-  a {
-    -webkit-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    transition: .3s all ease; }
-    a, a:hover {
-      text-decoration: none !important; }
-  
-  .content {
-    height: 70vh; }
-  
-  .footer-32892 {
-    background-color: #202126;
-    padding: 7rem 0;
-    color: #888;
-    font-size: 16px; }
-    .footer-32892, .footer-32892 h3 {
-      font-family: "Poppins", sans-serif; }
-    .footer-32892 h3 {
-      font-size: 20px;
-      color: #fff;
-      margin-bottom: 30px; }
-    .footer-32892 p {
-      font-family: "Source Serif Pro", serif; }
-    .footer-32892 .row.gallery {
-      margin-right: -5px;
-      margin-left: -5px; }
-      .footer-32892 .row.gallery > [class^="col-"],
-      .footer-32892 .row.gallery > [class*=" col-"] {
-        padding-right: 5px;
-        padding-left: 5px; }
-    .footer-32892 .gallery a {
-      display: block;
-      margin-bottom: 10px;
-      -webkit-transition: .3s all ease;
-      -o-transition: .3s all ease;
-      transition: .3s all ease; }
-      .footer-32892 .gallery a:hover {
-        opacity: .5; }
-    .footer-32892 .quick-info li {
-      color: #fff;
-      font-size: 16px;
-      margin-bottom: 10px; }
-      .footer-32892 .quick-info li a {
-        color: #fff; }
-      .footer-32892 .quick-info li .icon {
-        font-size: 20px;
-        color: #f88020; }
-    .footer-32892 .subscribe {
-      position: relative; }
-      .footer-32892 .subscribe .form-control {
-        background-color: #292b31;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-        border-radius: 30px;
-        height: 55px;
-        padding-left: 30px;
-        padding-right: 130px;
-        border: none;
-        color: #fff; }
-        .footer-32892 .subscribe .form-control::-webkit-input-placeholder {
-          color: #ccc;
-          font-size: 14px; }
-        .footer-32892 .subscribe .form-control::-moz-placeholder {
-          color: #ccc;
-          font-size: 14px; }
-        .footer-32892 .subscribe .form-control:-ms-input-placeholder {
-          color: #ccc;
-          font-size: 14px; }
-        .footer-32892 .subscribe .form-control:-moz-placeholder {
-          color: #ccc;
-          font-size: 14px; }
-      .footer-32892 .subscribe .btn-submit {
-        background: #f88020;
-        height: 47px;
-        border-radius: 30px;
-        padding-left: 30px;
-        padding-right: 30px;
-        color: #fff;
-        font-weight: bold;
-        position: absolute;
-        top: 4px;
-        right: 4px;
-        -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
-    .footer-32892 .tweets li {
-      margin-bottom: 20px;
-      font-size: 15px;
-      font-style: italic;
-      font-family: "Source Serif Pro", serif; }
-      .footer-32892 .tweets li span {
-        color: #fff; }
-    .footer-32892 .footer-menu-wrap {
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      padding-top: 2rem !important;
-      margin-top: 7rem; }
-    .footer-32892 .footer-menu {
-      margin-bottom: 0; }
-      .footer-32892 .footer-menu li {
-        display: inline-block; }
-        @media (max-width: 767.98px) {
-          .footer-32892 .footer-menu li {
-            display: block; } }
-        .footer-32892 .footer-menu li a {
-          padding: 10px;
-          display: inline-block;
-          color: #fff; }
-          @media (max-width: 767.98px) {
-            .footer-32892 .footer-menu li a {
-              display: block;
-              padding-left: 0px; } }
-        .footer-32892 .footer-menu li:first-child a {
-          padding-left: 0; }
-    .footer-32892 .site-logo {
-      color: #fff;
-      font-size: 20px; }
-  
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
 
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+a, a:hover {
+  text-decoration: none !important;
+}
+
+.content {
+  margin-top: 10px;
+}
+
+
+.head2 {
+  margin: 10px;
+}
+
+.par {
+  margin-right: 7%;
+  margin-left: 7%;
+  margin-bottom: 4%;
+}
+
+.textm {
+  font-family: 'Anek Malayalam', sans-serif;
+  padding: auto;
+}
+
+#how {
+  padding: 5px;
+}
+
+.footer-32892 {
+  background-color: #202126;
+  padding: 7rem 0;
+  color: #888;
+  font-size: 16px;
+}
+
+.footer-32892, .footer-32892 h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-32892 h3 {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.footer-32892 p {
+  font-family: "Source Serif Pro", serif;
+}
+
+.footer-32892 .row.gallery {
+  margin-right: -5px;
+  margin-left: -5px;
+}
+
+.footer-32892 .row.gallery>[class^="col-"],
+.footer-32892 .row.gallery>[class*=" col-"] {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.footer-32892 .gallery a {
+  display: block;
+  margin-bottom: 10px;
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+.footer-32892 .gallery a:hover {
+  opacity: .5;
+}
+
+.footer-32892 .quick-info li {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-32892 .quick-info li a {
+  color: #fff;
+}
+
+.footer-32892 .quick-info li .icon {
+  font-size: 20px;
+  color: #f88020;
+}
+
+.footer-32892 .tweets li {
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-style: italic;
+  font-family: "Source Serif Pro", serif;
+}
+
+.footer-32892 .tweets li span {
+  color: #fff;
+}
+
+.footer-32892 .footer-menu-wrap {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 2rem !important;
+  margin-top: 7rem;
+}
+
+.footer-32892 .footer-menu {
+  margin-bottom: 0;
+}
+
+.footer-32892 .footer-menu li {
+  display: inline-block;
+}
+
+@media (max-width: 767.98px) {
+  .footer-32892 .footer-menu li {
+    display: block;
+  }
+}
+
+.footer-32892 .footer-menu li a {
+  padding: 10px;
+  display: inline-block;
+  color: #fff;
+}
+
+@media (max-width: 767.98px) {
+  .footer-32892 .footer-menu li a {
+    display: block;
+    padding-left: 0px;
+  }
+}
+
+.footer-32892 .footer-menu li:first-child a {
+  padding-left: 0;
+}
+
+.footer-32892 .site-logo {
+  color: #fff;
+  font-size: 20px;
+}
