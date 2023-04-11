@@ -88,6 +88,9 @@ body {
   transform: rotate(45deg);
 }
 
+.share {
+  margin: 20px;
+}
 
 @media (max-width: 400px) {
   .text-boxes .text-box button {
@@ -183,7 +186,6 @@ a, a:hover {
 .par {
   margin-right: 7%;
   margin-left: 7%;
-  margin-bottom: 5%;
 }
 
 .textm {
