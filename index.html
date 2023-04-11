@@ -1,155 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" href="asset/logo-pencemo-2.jpg">
-    <link rel="stylesheet" href="icomoon/style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700">
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="icon" href="asset/logo-pencemo-2.jpg">
+  <link rel="stylesheet" href="icomoon/style.css">
+  <title>Document</title>
 </head>
+
 <body>
-    <header>
-        <nav class="bar navbar navbar-expand-lg navbar-light shadow p-3 mb-5">
-            <div class="container">
-                <div class="col-md-6 col-9"><a class="txt-uni navbar-brand text-white" href="#">Unicode Converter</a></div>
-                <div class="col-md-6 col-3"><button class="navbar-toggler bg-white shadow" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon "></span>
-                </button>
-                <div class="collapse navbar-collapse " id="navbarNavDropdown">
-                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-white" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-white" href="#">Pricing</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </nav> 
-    </header>
-    <section>
-      <div class="text-boxes">
-        <div class="text-box HTMLBox">
-          <div class="topic">Unicode Text</div>
-          <textarea id="unicode-text" placeholder="Type or paste text" ></textarea>
-        </div>
-        <div class="text-box CSSBox">
-          <div class="topic">ASCII Letter</div>
-          <textarea  id="text-result" id="CSSBox" readonly ></textarea>
-          <button id="CSSButton">Copy text <i class="fa fa-clone"></i></button>
-          <p id="alert">text copied</p>
-        </div>
-        
-    
-      <script>
-    
-    
-        // CSS Box Js Code
-        let CSSBox = document.getElementById("text-result");
-      let CSSButton = document.getElementById("CSSButton");
-
-      CSSButton.onclick = function() {
-        CSSBox.select();
-        document.execCommand("copy");
-        document.getElementById("alert").style.display="block";
-            setTimeout(function(){
-              document.getElementById("alert").style.display = "none"
-            },1000);
-      }
-        
-      </script>
-    </section>
-    <div class="content d-flex align-items-center bg-light">
-      <h2 class="w-100 text-center">Footer #2</h2>
-    </div>
-    
-    <footer class="footer-32892 pb-0">
-      <div class="site-section">
-        <div class="container">
-
-          
-          <div class="row">
-
-            <div class="col-md pr-md-5 mb-4 mb-md-0">
-              <h3>About Us</h3>
-              <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam itaque unde facere repellendus, odio et iste voluptatum aspernatur ratione mollitia tempora eligendi maxime est, blanditiis accusamus. Incidunt, aut, quis!</p>
-              <ul class="list-unstyled quick-info mb-4">
-                <li><a href="#" class="d-flex align-items-center"><span class="icon mr-3 icon-phone"></span> +1 291 3912 329</a></li>
-                <li><a href="#" class="d-flex align-items-center"><span class="icon mr-3 icon-envelope"></span> info@gmail.com</a></li>
-              </ul>
-
-              <form action="#" class="subscribe">
-                <input type="text" class="form-control" placeholder="Enter your e-mail">
-                <input type="submit" class="btn btn-submit" value="Send">
-              </form>
-            </div>
-            <div class="col-md mb-4 mb-md-0">
-              <h3>Latest Tweet</h3>
-              <ul class="list-unstyled tweets">
-                <li class="d-flex">
-                  <div class="mr-4"><span class="icon icon-twitter"></span></div>
-                  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere unde omnis veniam porro excepturi.</div>
-                </li>
-                <li class="d-flex">
-                  <div class="mr-4"><span class="icon icon-twitter"></span></div>
-                  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere unde omnis veniam porro excepturi.</div>
-                </li>
-                <li class="d-flex">
-                  <div class="mr-4"><span class="icon icon-twitter"></span></div>
-                  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere unde omnis veniam porro excepturi.</div>
-                </li>
-              </ul>
-            </div>
-
-
-            <div class="col-md-3 mb-4 mb-md-0">
-              <h3>Instagram</h3>
-              <div class="row gallery">
-                <div class="col-6">
-                  <a href="#"><img src="images/img_1.jpg" alt="Image" class="img-fluid"></a>
-                  <a href="#"><img src="images/img_2.jpg" alt="Image" class="img-fluid"></a>
-                </div>
-                <div class="col-6">
-                  <a href="#"><img src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
-                  <a href="#"><img src="images/img_4.jpg" alt="Image" class="img-fluid"></a>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-12">
-              <div class="py-5 footer-menu-wrap d-md-flex align-items-center">
-                <ul class="list-unstyled footer-menu mr-auto">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Our works</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Contacts</a></li>
-                </ul>
-                <div class="site-logo-wrap ml-auto">
-                  <a href="#" class="site-logo">
-                    Colorlib
-                  </a>
-                </div>
-              </div>
-            </div>
-            
+  <header>
+    <nav id="nav" class="bar navbar navbar-expand-lg navbar-light shadow p-3 mb-5">
+      <div class="container">
+        <div class="col-md-6 col-9"><a class="txt-uni navbar-brand text-white" href="#">Unicode Converter</a></div>
+        <div class="col-md-6 col-3"><button class="navbar-toggler bg-white shadow" type="button" data-toggle="collapse"
+            data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link text-white" href="#nav">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white ts-scroll" href="#how">Description</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#about">Services</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </footer>
-    <script src="dist/app.bundle.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    </nav>
+  </header>
+  <section>
+    <div class="text-boxes">
+      <div class="text-box HTMLBox">
+        <div class="topic">Unicode Text</div>
+        <textarea class="textm" id="unicode-text" placeholder="Type or paste text"></textarea>
+      </div>
+      <div class="text-box CSSBox">
+        <div class="topic">ASCII Letter</div>
+        <textarea id="text-result" id="CSSBox" readonly></textarea>
+        <button id="CSSButton">Copy text <i class="fa fa-file-text"></i></button>
+        <p id="alert">Text Copied</p>
+        <p id="boxnon"></p>
+      </div>
+
+
+      <script>
+
+
+        // CSS Box Js Code
+        let CSSBox = document.getElementById("text-result");
+        let CSSButton = document.getElementById("CSSButton");
+
+        CSSButton.onclick = function () {
+          CSSBox.select();
+          document.execCommand("copy");
+          document.getElementById("alert").style.display = "block";
+          setTimeout(function () {
+            document.getElementById("alert").style.display = "none"
+          }, 1000);
+          
+          document.getElementById("boxnon").style.display = "block";
+          setTimeout(function () {
+            document.getElementById("boxnon").style.display = "none"
+          }, 1000);
+        }
+
+      </script>
+  </section>
+  <div class="content head2 align-items-center bg-light">
+    <h2 id="how" class="w-100 text-center">Description</h2>
+    <div class="par">
+      <H4>ASCII</H4>
+      <p class="w-100 textm">മുഖ്യമായും യൂറോപ്യൻ മനുഷ്യഭാഷകളെ അടിസ്ഥാനമാക്കി 256 അക്ഷരങ്ങൾക്ക് ഇടം നൽകിയിട്ടുള്ള ഒരു
+        കമ്പ്യൂട്ടർ ലിപിസ്ഥാനപ്പട്ടികയാണ് ആസ്കി (ASCII). പൂർണ്ണമായ രൂപം അമേരിക്കൻ സ്റ്റാൻഡേർഡ് കോഡ് ഫോർ ഇൻഫോർമേഷൻ ഇന്റർ
+        ചെയ്ഞ്ച് (American Standard Code for Information Interchange). ANSI, Extended ASCII തുടങ്ങി വ്യത്യസ്തരൂപങ്ങളിൽ
+        ഉപയോഗിക്കപ്പെടുന്നുണ്ടെങ്കിലും യഥാർത്ഥ ASCII എന്നതു കൃത്യമായ ചട്ടക്കൂടുകളുള്ള ഒരൊറ്റ പട്ടികയാണ്. ഇംഗ്ലീഷ് മാത്രം
+        ഉപയോഗിക്കുന്ന കമ്പ്യൂട്ടറുകളിൽ 128 വ്യത്യസ്ത അക്ഷരസ്ഥാനങ്ങൾ ആവശ്യത്തിനുതകുമായിരുന്നു. എന്നാൽ മറ്റു ഭാഷകളും
+        കമ്പ്യൂട്ടറിൽ ഉപയോഗിക്കേണ്ടിവരുമെന്ന അവസ്ഥയിൽ ഇവ മതിയാകാതെ വന്നു. ഇതിനു പരിഹാരമായി ആദ്യകാലങ്ങളിൽ ഒരു ബിറ്റ് കൂടി
+        ചേർത്ത് 256 സ്ഥാനങ്ങൾ ഉള്ള Extended ASCII പ്രയോഗത്തിൽ വന്നു. ഇംഗ്ലീഷിനു പുറമേ ഏതെങ്കിലും ഒരു ഭാഷ കൂടി
+        ഉൾപ്പെടുത്താം എന്നതായിരുന്നു ഈ സംവിധാനത്തിലെ സൗകര്യം. പക്ഷേ, പ്രത്യേകം ഫോർമാറ്റ് ചെയ്ത രൂപത്തിലോ ക്രമീകരിച്ച
+        ഉപകരണങ്ങളിലോ മാത്രമേ ഈ സ്വരസ്ഥാനങ്ങൾക്ക് സാധുതയുണ്ടായിരുന്നുള്ളൂ. മറ്റേതെങ്കിലും കമ്പ്യൂട്ടറിലോ പ്രോഗ്രാമിലോ
+        ഉപയോഗിക്കുമ്പോൾ ഇവ അർത്ഥശൂന്യമായ വരികളായി പ്രത്യക്ഷപ്പെട്ടു. ഈ വിധം ആസ്കി ഫോർമാറ്റിൽ നിർമിക്കപ്പെട്ട മലയാളം
+        ഫോണ്ടുകളാണ് FML, MLTT, MLKV, MVM, SCRIBE etc...</p>
+      <H4>Unicode</H4>
+      <p class="w-100 textm">ഈ പരിമിതികളെ തരണം ചെയ്യാൻ അവലംബിച്ച പുതിയ മാനകമാണ് യുണികോഡ്. എട്ട് ബിറ്റുകളിൽ
+        ഒതുങ്ങിനിൽക്കാതെ, ആവശ്യം പോലെ വികസിപ്പിക്കാവുന്ന ലിപിസ്ഥാനപ്പട്ടികകളാണ് യുണികോഡിലുള്ളത്. UTF-8, UTF-16, UTF-32
+        തുടങ്ങിയ വിവിധ ഉപമാനകങ്ങളിൽ വികസിപ്പിച്ചിരിക്കുന്ന ഈ വ്യവസ്ഥയിൽ ലോകത്തിലെ ഏതൊരു ഭാഷയ്ക്കും തനതും അനന്യവുമായ
+        അക്ഷരസ്ഥാനം നൽകുവാൻ തക്ക വിധത്തിൽ സൗകര്യമുണ്ട്. 2007 ഡിസംബറിൽ യുണികോഡ് അവലംബിച്ച് പ്രവർത്തിക്കുന്ന കമ്പ്യൂട്ടർ
+        സംവിധാനങ്ങൾ പ്രചാരത്തിൽ ആസ്കിയെ പിന്നിലാക്കി. എങ്കിലും അതിനുമുമ്പ് നിർമ്മിക്കപ്പെട്ടതും ഇപ്പോഴും
+        പ്രവർത്തിച്ചുകൊണ്ടിരിക്കുന്നതുമായ പല ഉപകരണങ്ങളിലും ഫയലുകളിലും ലിപികളിലും ആസ്കി ഇപ്പോഴും അവശ്യമായും വേണ്ട ഒരു
+        സ്ഥാനവ്യവസ്ഥയായി തുടരുന്നു. </p>
+      <H4>How to use</H4>
+      <p class="w-100 textm">ആസ്കി ഫോർമാറ്റിൽ നിർമിക്കപ്പെട്ട ഫോണ്ടുകൾ ഉപയോഗിക്കാൻ ചില കോഡുകൾ ആവഷ്യമാണ്. ഇതിനായി
+        ഇത്തരത്തിലുള്ള Unicode Converter ഉപയോഗപ്പെടുത്താം. ടെക്സ്റ്റ് ബോക്സിൽ ടൈപ്പ് ചെയ്ത് കോഡ് കോപ്പി ചെയ്യുക.
+        പേസ്റ്റ് ചെയ്ത് ആവശ്യമുള്ള ആസ്കി ഫോണ്ട് ഉപയോഗിക്കാം
+        എങ്കിലും ചില ഫോണ്ട് പ്രകാരം "ണ്ട" യുടെ സ്ഥാനം വ്യത്യസ്ഥമാണ്. MLKV & Apple cards - @, FML & MVM - ï, Scribe - > ഈ
+        വിധം ണ്ട പ്രശ്നം ഒഴിവാക്കാം.</p>
+    </div>
+  </div>
+
+  <footer class="footer-32892 pb-0">
+    <div class="site-section">
+      <div class="container">
+
+
+        <div id="about" class="row">
+
+          <div class="col-md mb-4 mb-md-0">
+            <h3>Services</h3>
+            <ul class="list-unstyled quick-info mb-4">
+              <li><a href="https://t.me/pencemodesign" class="d-flex align-items-center"><span><i
+                      class="icon mr-3 fa fa-comments"></i></span> Support Chat</a></li>
+              <p class="mb-4">Join ore telegram group to get suppor chat</p>
+              <li><a href="https://t.me/pencemodesigns" class="d-flex align-items-center"><span><i
+                      class="icon mr-3 fa fa-comment"></i></span> Updates</a></li>
+              <p class="mb-4">For more updates join our telegram channel</p>
+            </ul>
+          </div>
+
+
+          <div class="col-md pr-md-5 mb-4 mb-md-0">
+            <h3>Follow us</h3>
+            <p class="mb-4">Please follow our pages</p>
+            <ul class="list-unstyled quick-info mb-4">
+              <li><a href="https://instagram.com/pencemo_designs" class="d-flex align-items-center"><span><i
+                      class="icon mr-3 fa fa-instagram"></i></span> Instagram/pencemodesigns</a></li>
+              <li><a href="https://www.facebook.com/pencemodesigns" class="d-flex align-items-center"><span><i
+                      class="icon mr-3 fa fa-facebook-square"></i></span> Facebook/pencemodesigns</a></li>
+              <li><a href="https://t.me/pencemodesign" class="d-flex align-items-center"><span><i
+                      class="icon mr-3 fa fa-youtube-play"></i></span>Youtube/pencemodesigns</a></li>
+            </ul>
+          </div>
+
+          
+
+          <div class="col-12">
+            <div class="py-5 footer-menu-wrap d-md-flex align-items-center">
+              <ul class="list-unstyled footer-menu mr-auto">
+                <li><a href="#nav">Home</a></li>
+                <li><a href="#how">Description</a></li>
+                <li><a href="#about">Services</a></li>
+                <li><a href="#about">Follow us</a></li>
+              </ul>
+              <div class="site-logo-wrap ml-auto">
+                <a href="#" class="site-logo">
+                  Pencemo Designs
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="dist/app.bundle.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
